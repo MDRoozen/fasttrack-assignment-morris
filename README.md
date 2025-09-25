@@ -137,3 +137,12 @@ For crew the following structure (an employee) can be used:
   "required": [ "employeeId", "name" ]
 }
 ```
+
+## Concrete future steps
+* expand angular tests
+* expand spring unit-tests
+* establish spring-boot integration tests (current problem seems to be the test database configuration)
+* implement validation logic
+* implement error handling (either in class, or through aop)
+* improve frontend ui-design
+* implement delete and post through frontend as well (include front-end validation of holidays)

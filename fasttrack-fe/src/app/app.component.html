@@ -2,8 +2,9 @@
 
 <ul>
   <li *ngFor="let holiday of holidays">
-    <app-holiday [label]="holiday.label" [status]="holiday.status" [employee]="holiday.employeeId"></app-holiday>
+    <app-holiday [holiday]="holiday"></app-holiday>
   </li>
 </ul>
+<app-new-holiday></app-new-holiday>
 
 <router-outlet></router-outlet>

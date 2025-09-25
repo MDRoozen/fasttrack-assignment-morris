@@ -27,4 +27,28 @@ public class HolidaysApi {
     public List<Holiday> getHolidaysByEmployee(@PathVariable String employeeCode) {
         return holidayRepository.findByEmployeeId(employeeCode);
     }
+
+    @PostMapping
+    public Holiday createHoliday(@RequestBody Holiday holiday) {
+        if(!validHoliday(holiday)) throw new IllegalArgumentException("not a valid holiday");
+        return holidayRepository.save(holiday);
+    }
+
+    @DeleteMapping("/{id}")
+    public void deleteHoliday(@PathVariable String id) {
+        holidayRepository.deleteById(id);
+    }
+
+    private boolean validHoliday(Holiday holiday) {
+        List<Holiday> holidays = holidayRepository.findByEmployeeId(holiday.getEmployeeId());
+        for(Holiday h : holidays) {
+            if(overlap(holiday, h)) return false;
+        }
+        return true;
+    }
+
+    private boolean overlap(Holiday holiday, Holiday h) {
+        // TODO: implement logic
+        return false;
+    }
 }

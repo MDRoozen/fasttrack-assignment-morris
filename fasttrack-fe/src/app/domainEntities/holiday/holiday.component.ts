@@ -1,4 +1,5 @@
-import {Component, Input} from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { HolidayModel } from "../../holiday.model";
 
 @Component({
   selector: 'app-holiday',
@@ -8,12 +9,6 @@ import {Component, Input} from '@angular/core';
 export class HolidayComponent {
 
   @Input()
-  label: string = "";
-
-  @Input()
-  status: string = "";
-
-  @Input()
-  employee: string = "";
+  holiday: HolidayModel;
 
 }
