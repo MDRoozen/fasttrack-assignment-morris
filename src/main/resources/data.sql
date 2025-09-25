@@ -18,5 +18,5 @@ insert into EMPLOYEE (ID, NAME) values ('klm543210', 'Jane Doolittle');
 insert into EMPLOYEE (ID, NAME) values ('klm202020', 'Katie-Lee Miller');
 
 insert into HOLIDAY (HOLIDAY_ID, HOLIDAY_LABEL, EMPLOYEE_ID, STATUS) values ('230193', 'summer vacation', 'klm012345', 0);
-insert into HOLIDAY (HOLIDAY_ID, HOLIDAY_LABEL, EMPLOYEE_ID, STATUS) values ('230194', 'summer vacation', 'klm543210', 1);
-insert into HOLIDAY (HOLIDAY_ID, HOLIDAY_LABEL, EMPLOYEE_ID, STATUS) values ('230195', 'summer vacation', 'klm012345', 2);
+insert into HOLIDAY (HOLIDAY_ID, HOLIDAY_LABEL, EMPLOYEE_ID, STATUS) values ('230194', 'fall vacation', 'klm543210', 1);
+insert into HOLIDAY (HOLIDAY_ID, HOLIDAY_LABEL, EMPLOYEE_ID, STATUS) values ('230195', 'winter vacation', 'klm012345', 2);
